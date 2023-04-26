@@ -42,7 +42,6 @@
                         <div class="logo">
                             <a href="{{ url('/') }}">
                                 <img src="{{ asset('assets/img/MTC-EDU-log.png') }}" class="black-logo" alt="logo">
-                                <!-- <img src="assets/img/logo.png" class="white-logo" alt="logo"> -->
                             </a>
                         </div>
                     </div>

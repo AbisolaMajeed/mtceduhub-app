@@ -58,12 +58,12 @@
                         <h3>Useful Link</h3>
 
                         <ul class="useful-link">
-                            <li><a href="#">AWS Cloud Practitioner</a></li>
-                            <li><a href="#">AWS Solutions Architect Associate</a></li>
-                            <li><a href="#">AWS SysOps Administrator Associate</a></li>
-                            <li><a href="#">AWS Developer Associate</a></li>
-                            <li><a href="#">AWS Solution Architect Professional</a></li>
-                            <li><a href="#">AWS DevOps Engineer Professional</a></li>
+                            <li><a href="{{ url('courses/aws-cloud') }}">AWS Cloud Practitioner</a></li>
+                            <li><a href="{{ url('courses/aws-solutions') }}">AWS Solutions Architect Associate</a></li>
+                            <li><a href="{{ url('courses/aws-sysops') }}">AWS SysOps Administrator Associate</a></li>
+                            <li><a href="{{ url('courses/aws-develop') }}">AWS Developer Associate</a></li>
+                            <li><a href="{{ url('courses/aws-solution') }}">AWS Solution Architect Professional</a></li>
+                            <li><a href="{{ url('courses/aws-devops') }}">AWS DevOps Engineer Professional</a></li>
                         </ul>
                     </div>
                 </div>
