@@ -63,7 +63,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-courses-box mb-30">
                         <div class="courses-image">
-                            <a href="single-courses.html" class="d-block"><img src="assets/img/courses/1.jpg"
+                            <a href="{{ url('courses/aws-cloud') }}" class="d-block"><img src="{{ asset('assets/img/courses/1.jpg') }}"
                                     alt="image"></a>
 
                             <div class="courses-tag">
