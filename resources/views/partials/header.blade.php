@@ -27,7 +27,6 @@
 
                     <div class="col-lg-4 col-md-4">
                         <ul class="top-header-login-register">
-                            <!-- <li><a href="login.html"><i class='bx bx-log-in'></i> Login</a></li> -->
                             <li><a href="#"><i class='bx bx-log-in-circle'></i> Register</a></li>
                         </ul>
                     </div>
@@ -42,7 +41,7 @@
                     <div class="raque-responsive-menu">
                         <div class="logo">
                             <a href="{{ url('/') }}">
-                                <img src="assets/img/MTC-EDU-log.png" class="black-logo" alt="logo">
+                                <img src="{{ asset('assets/img/MTC-EDU-log.png') }}" class="black-logo" alt="logo">
                                 <!-- <img src="assets/img/logo.png" class="white-logo" alt="logo"> -->
                             </a>
                         </div>
@@ -54,8 +53,7 @@
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
                         <a class="navbar-brand" href="{{ url('/') }}">
-                            <img src="assets/img/MTC-EDU-log.png" class="black-logo" alt="logo">
-                            <!-- <img src="assets/img/logo.png" class="white-logo" alt="logo"> -->
+                            <img src="{{ asset('assets/img/MTC-EDU-log.png') }}" class="black-logo" alt="logo">
                         </a>
 
                         <div class="collapse navbar-collapse mean-menu">

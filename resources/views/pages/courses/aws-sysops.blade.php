@@ -11,7 +11,7 @@
                 <ul>
                     <li><a href="{{ url('/') }}">Home</a></li>
                     <li><a href="{{ url('courses') }}">Courses</a></li>
-                    <li>AWS Cloud Practitioner</li>
+                    <li>AWS SysOps Administrator Associate</li>
                 </ul>
                 <h2>Courses</h2>
             </div>
@@ -26,7 +26,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-8">
                         <div class="courses-title">
-                            <h2>AWS Cloud Practitioner</h2>
+                            <h2>AWS SysOps Administrator Associate</h2>
                         </div>
 
                         <div class="courses-meta">
@@ -75,11 +75,11 @@
 
                     <div class="courses-details-desc">
                         <h3>Description</h3>
-                        <p><strong>Hi! Welcome to AWS Cloud Practitioner, </strong></p>
+                        <p><strong>Hi! Welcome to AWS SysOps Administrator Associate, </strong></p>
 
-                        <p>This course covers the foundational principles of the AWS Cloud, as well as best practices for
-                            designing and deploying applications on the AWS platform, and prepares you for the AWS Cloud
-                            Practitioner exam</p>
+                        <p>This course covers AWS operations principles, as well as best practices for managing and
+                            deploying systems on the AWS platform, and prepares you for the AWS SysOps Administrator
+                            Associate exam.</p>
 
                         <h3>Learning Objectives:</h3>
 
@@ -88,31 +88,31 @@
                                 <li>
                                     <span>
                                         <i class='bx bx-check'></i>
-                                        Understand the basic concepts and benefits of the AWS Cloud
+                                        Understand AWS operations principles and best practices
                                     </span>
                                 </li>
                                 <li>
                                     <span>
                                         <i class='bx bx-check'></i>
-                                        Learn how to design and deploy scalable, highly available, and fault-tolerant systems on the AWS platform
+                                        Learn how to manage and deploy systems on the AWS platform
                                     </span>
                                 </li>
                                 <li>
                                     <span>
                                         <i class='bx bx-check'></i>
-                                        Gain a comprehensive understanding of AWS services, including compute, storage, and networking
+                                        Develop a comprehensive understanding of AWS services, including compute, storage, and networking
                                     </span>
                                 </li>
                                 <li>
                                     <span>
                                         <i class='bx bx-check'></i>
-                                        Understand AWS security and compliance policies and best practices
+                                        Learn how to automate common tasks and use AWS tools for monitoring and troubleshooting
                                     </span>
                                 </li>
                                 <li>
                                     <span>
                                         <i class='bx bx-check'></i>
-                                        Prepare for the AWS Cloud Practitioner exam
+                                        Prepare for the AWS SysOps Administrator Associate exam
                                     </span>
                                 </li>
                             </ul>
@@ -120,11 +120,11 @@
 
                         <h3>Learning Outcomes:</h3>
                         <ul class="audience-list">
-                            <li> Pass the AWS Cloud Practitioner exam on your first attempt</li>
-                            <li>Understand the foundational principles of the AWS Cloud and its benefits</li>
-                            <li>Design and deploy scalable, highly available, and fault-tolerant systems on the AWS platform</li>
-                            <li>Use AWS services effectively to meet business needs</li>
-                            <li>Adhere to AWS security and compliance policies and best practices</li>
+                            <li> Pass the AWS SysOps Administrator Associate exam on your first attempt</li>
+                            <li>Demonstrate expertise in managing and deploying systems on the AWS platform</li>
+                            <li>Use AWS services and tools effectively for monitoring, troubleshooting, and automation</li>
+                            <li>Apply AWS operations principles and best practices to meet business needs</li>
+                            <li>Use AWS skills and knowledge to optimize performance and reduce costs</li>
                         </ul>
 
                     </div>
@@ -137,7 +137,7 @@
                     </div>
 
                     <div class="courses-sidebar-syllabus">
-                       <img src="{{ asset('assets/img/GET-THAT.png') }}" alt="" style="width:100%;">
+                        <img src="{{ asset('assets/img/GET-THAT.png') }}" alt="" style="width:100%;">
                     </div>
                 </div>
             </div>

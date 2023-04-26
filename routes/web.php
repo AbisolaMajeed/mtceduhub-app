@@ -40,7 +40,10 @@ Route::group(
         'prefix' => 'courses'
     ], function () {
         Route::get('/aws-cloud', [CourseController::class, 'viewAwsCloud']);
-        // Route::get('/inactive-view', [AdminFeedbackController::class, 'viewInActiveFeedback']);
-        // Route::get('/{id}', [AdminFeedbackController::class, 'toggleStatus']); 
+        Route::get('/aws-solutions', [CourseController::class, 'viewAwsSolutions']);
+        Route::get('/aws-sysops', [CourseController::class, 'viewAwsSysops']);
+        Route::get('/aws-develop', [CourseController::class, 'viewAwsDevelop']);
+        Route::get('/aws-solution', [CourseController::class, 'viewAwsSolution']);
+        Route::get('/aws-devops', [CourseController::class, 'viewAwsDevops']);
     }
 );
