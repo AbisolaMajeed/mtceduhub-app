@@ -32,7 +32,7 @@
                         <p><a
                                 href="https://templates.envytheme.com/cdn-cgi/l/email-protection#f79f929b9b98b78596868292d994989a"><span
                                     class="__cf_email__" data-cfemail="3c54595050537c4e5d4d4959125f5351">info@mtceduhub.com
-                                    << /span></a></p>
+                                    </span></a></p>
                         {{-- <p><a href="https://templates.envytheme.com/cdn-cgi/l/email-protection#7d0f1c0c08183d1518111112531e1210"><span class="__cf_email__" data-cfemail="beccdfcfcbdbfed6dbd2d2d190ddd1d3">[email&#160;protected]</span></a></p> --}}
                     </div>
                 </div>

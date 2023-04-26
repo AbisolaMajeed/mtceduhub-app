@@ -91,14 +91,14 @@
         <div class="footer-bottom-area">
             <div class="container">
                 <div class="logo">
-                    <a href="index.html" class="d-inline-block"><img src="assets/img/MTC-EDU-log.png"
+                    <a href="{{ url('/') }}" class="d-inline-block"><img src="{{ asset('assets/img/MTC-EDU-log.png') }}"
                             alt="image"></a>
                 </div>
                 <p><i class='bx bx-copyright'></i>
                     <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
                     <script>
                         document.write(new Date().getFullYear())
-                    </script> <a href="index.html" target="_blank">MTCEduHub</a> | All rights reserved.
+                    </script> <a href="{{ url('/') }}" target="_blank">MTCEduHub</a> | All rights reserved.
                 </p>
             </div>
         </div>

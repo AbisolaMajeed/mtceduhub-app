@@ -77,7 +77,7 @@
                                 <span>Steven Smith</span>
                             </div> --}}
 
-                            <h3><a href="single-courses.html" class="d-inline-block">AWS Cloud Practitioner</a></h3>
+                            <h3><a href="{{ url('courses/aws-cloud') }}" class="d-inline-block">AWS Cloud Practitioner</a></h3>
 
                             <div class="courses-rating">
                                 <div class="review-stars-rated">

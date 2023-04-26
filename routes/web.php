@@ -33,3 +33,14 @@ Route::get('testimoials',[TestimonialController::class, 'index'])->name('testimo
 Route::get('gallery',[GalleryController::class, 'index'])->name('gallery');
 Route::get('contact',[ContactController::class, 'index'])->name('contact');
 Route::get('blog',[BlogController::class, 'index'])->name('blog');
+
+
+Route::group(
+    [
+        'prefix' => 'courses'
+    ], function () {
+        Route::get('/aws-cloud', [CourseController::class, 'viewAwsCloud']);
+        // Route::get('/inactive-view', [AdminFeedbackController::class, 'viewInActiveFeedback']);
+        // Route::get('/{id}', [AdminFeedbackController::class, 'toggleStatus']); 
+    }
+);
