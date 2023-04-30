@@ -24,7 +24,7 @@
                     <div class="col-lg-4 col-md-6 mix AWS">
                         <div class="single-courses-box mb-30">
                             <div class="courses-image">
-                                <a href="single-courses.html" class="d-block"><img src="assets/img/courses/1.jpg"
+                                <a href="single-courses.html" class="d-block"><img src="assets/img/courses/AWS-Cloud-Practitioner.jpg"
                                         alt="image"></a>
 
                                 <div class="courses-tag">
@@ -75,7 +75,7 @@
                     <div class="col-lg-4 col-md-6 mix PMI">
                         <div class="single-courses-box mb-30">
                             <div class="courses-image">
-                                <a href="single-courses.html" class="d-block"><img src="assets/img/courses/2.jpg"
+                                <a href="single-courses.html" class="d-block"><img src="assets/img/courses/PMI-CAPM.png"
                                         alt="image"></a>
 
                                 <div class="courses-tag">
@@ -125,8 +125,8 @@
 
                     <div class="col-lg-4 col-md-6 mix CompTIA">
                         <div class="single-courses-box mb-30">
-                            <div class="courses-image">
-                                <a href="single-courses.html" class="d-block"><img src="assets/img/courses/3.jpg"
+                            <div class="courses-image" style="height:100%;">
+                                <a href="single-courses.html" class="d-block"><img src="assets/img/courses/CompTia-Network+.png"
                                         alt="image"></a>
 
                                 <div class="courses-tag">
@@ -177,7 +177,7 @@
                     <div class="col-lg-4 col-md-6 mix AWS">
                         <div class="single-courses-box mb-30">
                             <div class="courses-image">
-                                <a href="single-courses.html" class="d-block"><img src="assets/img/courses/4.jpg"
+                                <a href="single-courses.html" class="d-block"><img src="assets/img/courses/AWS-Developer-Associate.png"
                                         alt="image"></a>
 
                                 <div class="courses-tag">
@@ -229,7 +229,7 @@
                     <div class="col-lg-4 col-md-6 mix IIBA">
                         <div class="single-courses-box mb-30">
                             <div class="courses-image">
-                                <a href="single-courses.html" class="d-block"><img src="assets/img/courses/5.jpg"
+                                <a href="single-courses.html" class="d-block"><img src="assets/img/courses/ECBA-IIBA.jpg"
                                         alt="image"></a>
 
                                 <div class="courses-tag">
@@ -282,7 +282,7 @@
                     <div class="col-lg-4 col-md-6 mix IIBA">
                         <div class="single-courses-box mb-30">
                             <div class="courses-image">
-                                <a href="single-courses.html" class="d-block"><img src="assets/img/courses/6.jpg"
+                                <a href="single-courses.html" class="d-block"><img src="assets/img/courses/CBAP-IIBA.jpg"
                                         alt="image"></a>
 
                                 <div class="courses-tag">
