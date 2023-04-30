@@ -45,5 +45,9 @@ Route::group(
         Route::get('/aws-develop', [CourseController::class, 'viewAwsDevelop']);
         Route::get('/aws-solution', [CourseController::class, 'viewAwsSolution']);
         Route::get('/aws-devops', [CourseController::class, 'viewAwsDevops']);
+        Route::get('/comptia-network', [CourseController::class, 'viewComptiaNetwork']);
+        Route::get('/iiba-cbap', [CourseController::class, 'viewIibaCbap']);
+        Route::get('/iiba-ecba', [CourseController::class, 'viewIibaEcba']);
+        Route::get('/pmi-capm', [CourseController::class, 'viewPmiCapm']);
     }
 );

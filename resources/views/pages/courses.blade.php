@@ -21,52 +21,16 @@
     <!-- Start Courses Area -->
     <section class="courses-area ptb-100">
         <div class="container">
-            <div class="courses-topbar">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 col-md-4">
-                        <div class="topbar-result-count">
-                            <p>Showing 1 – 6 of 54</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-8 col-md-8">
-                        <div class="topbar-ordering-and-search">
-                            <div class="row align-items-center">
-                                <div class="col-lg-3 col-md-5 offset-lg-4 offset-md-1 col-sm-6">
-                                    <div class="topbar-ordering">
-                                        <select>
-                                            <option>Sort by popularity</option>
-                                            <option>Sort by latest</option>
-                                            <option>Default sorting</option>
-                                            <option>Sort by rating</option>
-                                            <option>Sort by new</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-5 col-md-6 col-sm-6">
-                                    <div class="topbar-search">
-                                        <form>
-                                            <label><i class="bx bx-search"></i></label>
-                                            <input type="text" class="input-search" placeholder="Search here...">
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="single-courses-box mb-30">
                         <div class="courses-image">
                             <a href="{{ url('courses/aws-cloud') }}" class="d-block"><img
-                                    src="{{ asset('assets/img/courses/1.jpg') }}" alt="image"></a>
+                                    src="{{ asset('assets/img/courses/AWS-Cloud-Practitioner.jpg') }}" alt="image" class="courses-img-size"></a>
 
                             <div class="courses-tag">
-                                <a href="#" class="d-block">AWS</a>
+                                <a href="{{ url('courses/aws-cloud') }}" class="d-block">AWS</a>
                             </div>
                         </div>
 
@@ -94,11 +58,11 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-courses-box mb-30">
                         <div class="courses-image">
-                            <a href="{{ url('courses/aws-solutions') }}" class="d-block"><img src="assets/img/courses/6.jpg"
-                                    alt="image"></a>
+                            <a href="{{ url('courses/aws-solutions') }}" class="d-block"><img src="{{ asset('assets/img/courses/AWS Solutions-Architect-Associate.png') }}"
+                                    alt="image"  class="courses-img-size"></a>
 
                             <div class="courses-tag">
-                                <a href="#" class="d-block">AWS</a>
+                                <a href="{{ url('courses/aws-solutions') }}" class="d-block">AWS</a>
                             </div>
                         </div>
 
@@ -126,11 +90,11 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-courses-box mb-30">
                         <div class="courses-image">
-                            <a href="{{ url('courses/aws-sysops') }}" class="d-block"><img src="assets/img/courses/2.jpg"
-                                    alt="image"></a>
+                            <a href="{{ url('courses/aws-sysops') }}" class="d-block"><img src="assets/img/courses/AWS-SysOps-Administrator-Associate.png"
+                                    alt="image"  class="courses-img-size"></a>
 
                             <div class="courses-tag">
-                                <a href="#" class="d-block">AWS</a>
+                                <a href="{{ url('courses/aws-sysops') }}" class="d-block">AWS</a>
                             </div>
                         </div>
 
@@ -158,11 +122,11 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-courses-box mb-30">
                         <div class="courses-image">
-                            <a href="{{ url('courses/aws-develop') }}" class="d-block"><img src="assets/img/courses/3.jpg"
-                                    alt="image"></a>
+                            <a href="{{ url('courses/aws-develop') }}" class="d-block"><img src="assets/img/courses/AWS-Developer-Associate.png"
+                                    alt="image"  class="courses-img-size"></a>
 
                             <div class="courses-tag">
-                                <a href="#" class="d-block">AWS</a>
+                                <a href="{{ url('courses/aws-develop') }}" class="d-block">AWS</a>
                             </div>
                         </div>
 
@@ -189,11 +153,11 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-courses-box mb-30">
                         <div class="courses-image">
-                            <a href="{{ url('courses/aws-solution') }}" class="d-block"><img src="assets/img/courses/4.jpg"
-                                    alt="image"></a>
+                            <a href="{{ url('courses/aws-solution') }}" class="d-block"><img src="assets/img/courses/AWS Solutions-Architect-Associate.png"
+                                    alt="image"  class="courses-img-size"></a>
 
                             <div class="courses-tag">
-                                <a href="#" class="d-block">AWS</a>
+                                <a href="{{ url('courses/aws-solution') }}" class="d-block">AWS</a>
                             </div>
                         </div>
 
@@ -221,11 +185,11 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-courses-box mb-30">
                         <div class="courses-image">
-                            <a href="{{ url('courses/aws-devops') }}" class="d-block"><img src="assets/img/courses/5.jpg"
-                                    alt="image"></a>
+                            <a href="{{ url('courses/aws-devops') }}" class="d-block"><img src="assets/img/courses/AWS-DevOps-Engineer-Professional.png"
+                                    alt="image"  class="courses-img-size"></a>
 
                             <div class="courses-tag">
-                                <a href="#" class="d-block">AWS</a>
+                                <a href="{{ url('courses/aws-devops') }}" class="d-block">AWS</a>
                             </div>
                         </div>
 
@@ -247,17 +211,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                    <div class="pagination-area text-center">
-                        <span class="page-numbers current" aria-current="page">1</span>
-                        <a href="#" class="page-numbers">2</a>
-                        <a href="#" class="page-numbers">3</a>
-                        <a href="#" class="page-numbers">4</a>
-                        <a href="#" class="page-numbers">5</a>
-                        <a href="#" class="next page-numbers"><i class='bx bx-chevron-right'></i></a>
                     </div>
                 </div>
             </div>

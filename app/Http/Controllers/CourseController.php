@@ -39,4 +39,24 @@ class CourseController extends Controller
     {
         return view('pages.courses.aws-devops');
     } 
+
+    public function viewComptiaNetwork()
+    {
+        return view('pages.courses.comptia-network');
+    }
+
+    public function viewIibaCbap()
+    {
+        return view('pages.courses.iiba-cbap');
+    }
+
+    public function viewIibaEcba()
+    {
+        return view('pages.courses.iiba-ecba');
+    }
+
+    public function viewPmiCapm ()
+    {
+        return view('pages.courses.pmi-capm');
+    }
 }

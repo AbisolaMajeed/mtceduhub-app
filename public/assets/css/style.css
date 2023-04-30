@@ -2710,6 +2710,11 @@ Main Banner CSS
   color: #ffffff;
 }
 
+.courses-img-size {
+  object-fit: cover;
+  height: 15rem;
+}
+
 .banner-courses-category {
   text-align: center;
   padding-left: 15px;
