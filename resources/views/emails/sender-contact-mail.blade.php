@@ -1,7 +1,5 @@
 @component('mail::message')
 
-{{-- # CloudletHR Contact --}}
-
 Dear {{$data['name']}},
 <br>
 

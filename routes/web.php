@@ -9,6 +9,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\TestimonialController;
+use App\Http\Controllers\NewsletterSubscriberController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,6 +38,7 @@ Route::get('blog',[BlogController::class, 'index'])->name('blog');
 Route::get('contact',[ContactController::class, 'index'])->name('contact');
 Route::post('contact', [ContactController::class, 'mailContactForm']);
 
+Route::post('newsletter-subscriber', [NewsletterSubscriberController::class, 'mailNewletterSubscriberForm']);
 
 Route::group(
     [

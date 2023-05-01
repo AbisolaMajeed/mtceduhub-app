@@ -60,11 +60,11 @@
                         <div class="newsletter-box">
                             <p>To get the latest news and latest updates from us.</p>
 
-                            <form class="newsletter-form" data-bs-toggle="validator">
+                            <form class="newsletter-form" data-bs-toggle="validator" action="newsletter-subscriber" method="post" role="form">
                                 <label>Your e-mail address:</label>
                                 <input type="email" class="input-newsletter" placeholder="Enter your email"
-                                    name="EMAIL" required autocomplete="off">
-                                <button type="submit">Subscribe</button>
+                                    name="email" id="email" required autocomplete="off">
+                                <button type="submit" class="btn-submit">Subscribe</button>
                                 <div id="validator-newsletter" class="form-result"></div>
                             </form>
                         </div>
