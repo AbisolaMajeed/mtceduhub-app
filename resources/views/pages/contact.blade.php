@@ -29,11 +29,11 @@
                         </div>
 
                         <h3>Email Here</h3>
-                        <p><a
-                                href="https://templates.envytheme.com/cdn-cgi/l/email-protection#f79f929b9b98b78596868292d994989a"><span
-                                    class="__cf_email__" data-cfemail="3c54595050537c4e5d4d4959125f5351">info@mtceduhub.com
-                                    </span></a></p>
-                        {{-- <p><a href="https://templates.envytheme.com/cdn-cgi/l/email-protection#7d0f1c0c08183d1518111112531e1210"><span class="__cf_email__" data-cfemail="beccdfcfcbdbfed6dbd2d2d190ddd1d3">[email&#160;protected]</span></a></p> --}}
+                        <p>
+                            <a href="mailto:info@mtceduhub.com">
+                                <span>info@mtceduhub.com</span>
+                            </a>
+                        </p>
                     </div>
                 </div>
 
@@ -44,7 +44,7 @@
                         </div>
 
                         <h3>Location Here</h3>
-                        <p><a href="https://goo.gl/maps/Mii9keyeqXeNH4347" target="_blank">105, Adeniyi Jones Avenue, ABC
+                        <p><a href="https://goo.gl/maps/iu21zgWCzv2SaBEHA" target="_blank">105, Adeniyi Jones Avenue, ABC
                                 Bus Stop, Ikeja.</a></p>
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                         </div>
 
                         <h3>Call Here</h3>
-                        <p><a href="tel:1234567890">+234 802 989 4444</a></p>
+                        <p>+234 802 989 4444</p>
                         {{-- <p><a href="tel:2414524526">+241 452 4526</a></p> --}}
                     </div>
                 </div>
@@ -77,7 +77,12 @@
             </div>
 
             <div class="contact-form">
-                <form id="contactForm">
+                    <div class="alert alert-success alert-dismissible fade show" role="alert" id="successMsg"  style="display: none">
+                        Thanks for your message. We will get back to you soon!
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+
+                <form id="contactForm" action="contact" method="post" role="form">
                     <div class="row">
                         <div class="col-lg-6 col-md-12">
                             <div class="form-group">
@@ -124,7 +129,7 @@
                                     class='bx bx-paper-plane icon-arrow before'></i><span class="label">Send
                                     Message</span><i class="bx bx-paper-plane icon-arrow after"></i></button>
                             <div id="msgSubmit" class="h3 text-center hidden"></div>
-                            <div class="clearfix"></div>
+                            {{-- <div class="clearfix"></div> --}}
                         </div>
                     </div>
                 </form>
@@ -132,7 +137,7 @@
         </div>
 
         <div id="particles-js-circle-bubble-3"></div>
-        <div class="contact-bg-image"><img src="assets/img/map.png" alt="image"></div>
+        <div class="contact-bg-image"><img src="{{ asset('assets/img/map.png') }}" alt="image"></div>
     </section>
     <!-- End Contact Area -->
 

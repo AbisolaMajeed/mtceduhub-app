@@ -12230,8 +12230,8 @@ Contact CSS
 #contactForm .default-btn {
   border-radius: 30px;
   margin-top: 10px;
-  -webkit-box-shadow: 0 5px 28.5px 1.5px rgba(255, 25, 73, 0.2);
-          box-shadow: 0 5px 28.5px 1.5px rgba(255, 25, 73, 0.2);
+  /* -webkit-box-shadow: 0 5px 28.5px 1.5px rgba(255, 25, 73, 0.2);
+          box-shadow: 0 5px 28.5px 1.5px rgba(255, 25, 73, 0.2); */
 }
 
 #contactForm .default-btn:hover, #contactForm .default-btn:focus {

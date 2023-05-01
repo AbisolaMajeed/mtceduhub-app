@@ -38,7 +38,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-2 col-md-6 col-sm-6">
+                <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="single-footer-widget mb-30">
                         <h3>Featured Links</h3>
 
@@ -48,26 +48,11 @@
                             <li><a href="{{ route('courses') }}">Courses</a></li>
                             <li><a href="{{ route('gallery') }}">Gallery</a></li>
                             <li><a href="{{ route('testimonials') }}">Testimonial</a></li>
-                            <li><a href="#">Register</a></li>
+                            {{-- <li><a href="#">Register</a></li> --}}
                         </ul>
                     </div>
                 </div>
-
-                <div class="col-lg-2 col-md-6 col-sm-6">
-                    <div class="single-footer-widget mb-30">
-                        <h3>Useful Link</h3>
-
-                        <ul class="useful-link">
-                            <li><a href="{{ url('courses/aws-cloud') }}">AWS Cloud Practitioner</a></li>
-                            <li><a href="{{ url('courses/aws-solutions') }}">AWS Solutions Architect Associate</a></li>
-                            <li><a href="{{ url('courses/aws-sysops') }}">AWS SysOps Administrator Associate</a></li>
-                            <li><a href="{{ url('courses/aws-develop') }}">AWS Developer Associate</a></li>
-                            <li><a href="{{ url('courses/aws-solution') }}">AWS Solution Architect Professional</a></li>
-                            <li><a href="{{ url('courses/aws-devops') }}">AWS DevOps Engineer Professional</a></li>
-                        </ul>
-                    </div>
-                </div>
-
+                
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="single-footer-widget mb-30">
                         <h3>Newsletter</h3>

@@ -76,8 +76,6 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 mt-5">
                     <iframe src="https://www.youtube.com/embed/84Y2bVX3NXI" allowfullscreen></iframe>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6 mt-5">
                     <iframe src="https://www.youtube.com/embed/cPosyfWiRnA" allowfullscreen></iframe>
                 </div>

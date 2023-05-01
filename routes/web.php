@@ -31,8 +31,11 @@ Route::get('about', [AboutController::class, 'index'])->name('about');
 Route::get('register',[RegisterController::class, 'index'])->name('register');
 Route::get('testimoials',[TestimonialController::class, 'index'])->name('testimonials');
 Route::get('gallery',[GalleryController::class, 'index'])->name('gallery');
-Route::get('contact',[ContactController::class, 'index'])->name('contact');
 Route::get('blog',[BlogController::class, 'index'])->name('blog');
+
+
+Route::get('contact',[ContactController::class, 'index'])->name('contact');
+Route::post('contact', [ContactController::class, 'mailContactForm']);
 
 
 Route::group(
