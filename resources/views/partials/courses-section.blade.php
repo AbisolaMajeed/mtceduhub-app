@@ -24,7 +24,7 @@
                         <div class="single-courses-box mb-30">
                             <div class="courses-image">
                                 <a href="{{ url('courses/aws-cloud') }}" class="d-block"><img
-                                        src="assets/img/courses/AWS-Cloud-Practitioner.jpg" alt="image"
+                                        src="{{ asset('assets/img/courses/AWS-Cloud-Practitioner.jpg') }}" alt="image"
                                         class="courses-img-size" style=" "></a>
 
                                 <div class="courses-tag">
@@ -55,7 +55,7 @@
                     <div class="col-lg-4 col-md-6 mix PMI">
                         <div class="single-courses-box mb-30">
                             <div class="courses-image">
-                                <a href="{{ url('courses/pmi-capm') }}" class="d-block"><img src="assets/img/courses/PMI-CAPM.png"
+                                <a href="{{ url('courses/pmi-capm') }}" class="d-block"><img src="{{ asset('assets/img/courses/PMI-CAPM.png') }}"
                                         alt="image" class="courses-img-size"></a>
 
                                 <div class="courses-tag">
@@ -87,7 +87,7 @@
                         <div class="single-courses-box mb-30">
                             <div class="courses-image">
                                 <a href="{{ url('courses/comptia-network') }}" class="d-block"><img
-                                        src="assets/img/courses/CompTia-Network+.png" alt="image"
+                                        src="{{ asset('assets/img/courses/CompTia-Network+.png') }}" alt="image"
                                         class="courses-img-size"></a>
 
                                 <div class="courses-tag">
@@ -119,7 +119,7 @@
                         <div class="single-courses-box mb-30">
                             <div class="courses-image">
                                 <a href="{{ url('courses/aws-develop') }}" class="d-block"><img
-                                        src="assets/img/courses/AWS-Developer-Associate.png" alt="image"
+                                        src="{{ asset('assets/img/courses/AWS-Developer-Associate.png') }}" alt="image"
                                         class="courses-img-size"></a>
 
                                 <div class="courses-tag">
@@ -152,7 +152,7 @@
                         <div class="single-courses-box mb-30">
                             <div class="courses-image">
                                 <a href="{{ url('courses/iiba-ecba') }}" class="d-block"><img
-                                        src="assets/img/courses/ECBA-IIBA.jpg" alt="image"
+                                        src="{{ asset('assets/img/courses/ECBA-IIBA.jpg') }}" alt="image"
                                         class="courses-img-size"></a>
 
                                 <div class="courses-tag">
@@ -185,7 +185,7 @@
                         <div class="single-courses-box mb-30">
                             <div class="courses-image">
                                 <a href="{{ url('courses/iiba-cbap') }}" class="d-block"><img
-                                        src="assets/img/courses/CBAP-IIBA.jpg" alt="image"
+                                        src="{{ asset('assets/img/courses/CBAP-IIBA.jpg') }}" alt="image"
                                         class="courses-img-size"></a>
 
                                 <div class="courses-tag">

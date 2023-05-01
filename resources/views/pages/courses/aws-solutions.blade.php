@@ -70,7 +70,7 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="courses-details-image text-center">
-                        <img src="{{ asset('assets/img/courses/3.jpg') }}" alt="image">
+                        <img src="{{ asset('assets/img/courses/AWS Solutions-Architect-Associate.png') }}" alt="image">
                     </div>
 
                     <div class="courses-details-desc">

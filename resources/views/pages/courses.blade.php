@@ -90,7 +90,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-courses-box mb-30">
                         <div class="courses-image">
-                            <a href="{{ url('courses/aws-sysops') }}" class="d-block"><img src="assets/img/courses/AWS-SysOps-Administrator-Associate.png"
+                            <a href="{{ url('courses/aws-sysops') }}" class="d-block"><img src="{{ asset('assets/img/courses/AWS-SysOps-Administrator-Associate.png') }}"
                                     alt="image"  class="courses-img-size"></a>
 
                             <div class="courses-tag">
@@ -122,7 +122,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-courses-box mb-30">
                         <div class="courses-image">
-                            <a href="{{ url('courses/aws-develop') }}" class="d-block"><img src="assets/img/courses/AWS-Developer-Associate.png"
+                            <a href="{{ url('courses/aws-develop') }}" class="d-block"><img src="{{ asset('assets/img/courses/AWS-Developer-Associate.png') }}"
                                     alt="image"  class="courses-img-size"></a>
 
                             <div class="courses-tag">
@@ -153,7 +153,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-courses-box mb-30">
                         <div class="courses-image">
-                            <a href="{{ url('courses/aws-solution') }}" class="d-block"><img src="assets/img/courses/AWS Solutions-Architect-Associate.png"
+                            <a href="{{ url('courses/aws-solution') }}" class="d-block"><img src="{{ asset('assets/img/courses/AWS-Solution-Architect-Professional.png') }}"
                                     alt="image"  class="courses-img-size"></a>
 
                             <div class="courses-tag">
@@ -185,7 +185,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-courses-box mb-30">
                         <div class="courses-image">
-                            <a href="{{ url('courses/aws-devops') }}" class="d-block"><img src="assets/img/courses/AWS-DevOps-Engineer-Professional.png"
+                            <a href="{{ url('courses/aws-devops') }}" class="d-block"><img src="{{ asset('assets/img/courses/AWS-DevOps-Engineer-Professional.png') }}"
                                     alt="image"  class="courses-img-size"></a>
 
                             <div class="courses-tag">

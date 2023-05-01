@@ -129,7 +129,7 @@
                                     class='bx bx-paper-plane icon-arrow before'></i><span class="label">Send
                                     Message</span><i class="bx bx-paper-plane icon-arrow after"></i></button>
                             <div id="msgSubmit" class="h3 text-center hidden"></div>
-                            {{-- <div class="clearfix"></div> --}}
+                            <div class="clearfix"></div>
                         </div>
                     </div>
                 </form>
