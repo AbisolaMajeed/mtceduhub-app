@@ -7,10 +7,15 @@
         if (event.isDefaultPrevented()) {
             // handle the invalid form...
             formError();
-            submitMSG(false, "Did you fill in the form properly?");
+            // submitMSG(false, "Did you fill in the form properly?");
         } else {
             // everything looks good!
             event.preventDefault();
+
+            // Add loading spinner to button
+            $(".btn-submit").prepend('<i class="fa-solid fa-spinner"></i>');
+            $(".btn-submit").attr("disabled", 'disabled');
+
             submitForm();
         }
     });
@@ -38,15 +43,16 @@
             },
 
             success: function () {
+                // Reset form input after submission
+                $('#contactForm')[0].reset();
+
+                // Display success message
                 $('#successMsg').show();
 
-                resetForm();
+                $(".btn-submit").find(".fa-spinner").remove();
+                $(".btn-submit").removeAttr("disabled");
             }
         });
-    }
-
-    function resetForm() {
-        $('#contactForm')[0].reset();
     }
 
     function formSuccess() {

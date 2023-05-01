@@ -16,10 +16,7 @@ class ContactController extends Controller
     }
 
     public function mailContactForm(ContactFormRequest $request)
-    {
-        //Store data in database
-        Contact::create($request->all());
-        
+    {   
         $data = array(
             'name' => $request->name,
             'email' => $request->email,
@@ -30,6 +27,9 @@ class ContactController extends Controller
 
         Mail::to($request->email)->send(new SendContactEmail($data));
         Mail::to('info@mtceduhub.com')->send(new SendContactAdminEmail($data));
+
+        //Store data in database
+        Contact::create($data);
 
         return response()->json(['success'=>'Successful!']);
     }
