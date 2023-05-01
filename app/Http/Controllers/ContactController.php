@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contact;
 use App\Mail\SendContactEmail;
 use App\Mail\SendContactAdminEmail;
 use Illuminate\Support\Facades\Mail;
@@ -16,6 +17,9 @@ class ContactController extends Controller
 
     public function mailContactForm(ContactFormRequest $request)
     {
+        //Store data in database
+        Contact::create($request->all());
+        
         $data = array(
             'name' => $request->name,
             'email' => $request->email,
