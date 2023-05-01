@@ -11,7 +11,7 @@
                 <ul>
                     <li><a href="{{ url('/') }}">Home</a></li>
                     <li><a href="{{ url('courses') }}">Courses</a></li>
-                    <li>AWS SysOps Administrator Associate</li>
+                    <li>CompTIA Network+</li>
                 </ul>
                 <h2>Courses</h2>
             </div>
@@ -70,7 +70,7 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="courses-details-image text-center">
-                        <img src="{{ asset('assets/img/courses/3.jpg') }}" alt="image">
+                        <img src="{{ asset('assets/img/courses/CompTia-Network+.png') }}" alt="image">
                     </div>
 
                     <div class="courses-details-desc">
