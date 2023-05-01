@@ -821,8 +821,39 @@ jQuery(function ($) {
         } 
         else {
             event.preventDefault();
+
+            // Add loading spinner to button
+            $(".btn-submit").prepend('<i class="fa-solid fa-spinner"></i>');
+            $(".btn-submit").attr("disabled", 'disabled');
+
+            submitForm();
         }
     });
+
+    function submitForm() {
+        // Initiate Variables With Form Content
+        var email = $("#email").val();
+
+        $.ajax({
+            type: "POST",
+            url: "/newsletter-subscriber",
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            data: {
+                email: email,
+            },
+
+            success: function () {
+
+                formSuccessSub()
+
+                $(".btn-submit").find(".fa-spinner").remove();
+                $(".btn-submit").removeAttr("disabled");
+            }
+        });
+    }
+
     function callbackFunction (resp) {
         if (resp.result === "success") {
             formSuccessSub();
@@ -835,7 +866,7 @@ jQuery(function ($) {
         $(".newsletter-form")[0].reset();
         submitMSGSub(true, "Thank you for subscribing!");
         setTimeout(function() {
-            $("#validator-newsletter").addClass('hide');
+            $("#validator-newsletter").remove();
         }, 4000)
     }
     function formErrorSub(){
