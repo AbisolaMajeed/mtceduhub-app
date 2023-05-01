@@ -77,10 +77,10 @@
             </div>
 
             <div class="contact-form">
-                    <div class="alert alert-success alert-dismissible fade show" role="alert" id="successMsg"  style="display: none">
-                        Thanks for your message. We will get back to you soon!
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
+                <div class="alert alert-success alert-dismissible fade show" role="alert" id="successMsg"  style="display: none">
+                    Thanks for your message. We will get back to you soon!
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
 
                 <form id="contactForm" action="contact" method="post" role="form">
                     <div class="row">
@@ -125,7 +125,7 @@
                         </div>
 
                         <div class="col-lg-12 col-md-12">
-                            <button type="submit" class="default-btn"><i
+                            <button type="submit" class="default-btn btn-submit"><i
                                     class='bx bx-paper-plane icon-arrow before'></i><span class="label">Send
                                     Message</span><i class="bx bx-paper-plane icon-arrow after"></i></button>
                             <div id="msgSubmit" class="h3 text-center hidden"></div>

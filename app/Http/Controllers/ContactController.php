@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Contact;
 use App\Mail\SendContactEmail;
 use App\Mail\SendContactAdminEmail;
 use Illuminate\Support\Facades\Mail;
@@ -15,7 +16,7 @@ class ContactController extends Controller
     }
 
     public function mailContactForm(ContactFormRequest $request)
-    {
+    {   
         $data = array(
             'name' => $request->name,
             'email' => $request->email,
@@ -26,6 +27,9 @@ class ContactController extends Controller
 
         Mail::to($request->email)->send(new SendContactEmail($data));
         Mail::to('info@mtceduhub.com')->send(new SendContactAdminEmail($data));
+
+        //Store data in database
+        Contact::create($data);
 
         return response()->json(['success'=>'Successful!']);
     }
