@@ -44,8 +44,8 @@
                         </div>
 
                         <h3>Location Here</h3>
-                        <p><a href="https://goo.gl/maps/iu21zgWCzv2SaBEHA" target="_blank">105, Adeniyi Jones Avenue, ABC
-                                Bus Stop, Ikeja.</a></p>
+                        <p><a href="https://goo.gl/maps/vnvq6cRbmj1ufDcC6" target="_blank">12, Eletu Odibo Street, Abule
+                                Ijesha, Yaba, Lagos.</a></p>
                     </div>
                 </div>
 
@@ -77,7 +77,8 @@
             </div>
 
             <div class="contact-form">
-                <div class="alert alert-success alert-dismissible fade show" role="alert" id="successMsg"  style="display: none">
+                <div class="alert alert-success alert-dismissible fade show" role="alert" id="successMsg"
+                    style="display: none">
                     Thanks for your message. We will get back to you soon!
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
@@ -144,7 +145,7 @@
     <!-- Maps -->
     <div id="map">
         <iframe scrolling="no" marginheight="0" marginwidth="0"
-            src="https://maps.google.com/maps?q=ABC%20Bus%20Stop%2C%20Ikeja%2C%20Lagos.&amp;t=m&amp;z=14&amp;output=embed&amp;iwloc=near"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.007171819619!2d3.3783834758244087!3d6.520773923193335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8cff10dc5199%3A0x4b07dc9640eb0185!2s12%20Eletu%20Odibo%20St%2C%20Yaba%20101245%2C%20Lagos!5e0!3m2!1sen!2sng!4v1683062718666!5m2!1sen!2sng"
             aria-label="ABC Bus Stop, Ikeja, Lagos." frameborder="0"></iframe>
     </div>
     <!-- End Maps -->

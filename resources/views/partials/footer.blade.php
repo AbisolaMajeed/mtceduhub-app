@@ -9,7 +9,7 @@
                         <ul class="contact-us-link">
                             <li>
                                 <i class='bx bx-map'></i>
-                                <a href="#" target="_blank">105, Adeniyi Jones Avenue, ABC Bus Stop, Ikeja.</a>
+                                <a href="#" target="_blank">12, Eletu Odibo Street, Abule Ijesha, Yaba, Lagos</a>
                             </li>
                             <li>
                                 <i class='bx bx-phone-call'></i>
@@ -17,8 +17,9 @@
                             </li>
                             <li>
                                 <i class='bx bx-envelope'></i>
-                                <a href="#"><span class="__cf_email__"
-                                        data-cfemail="3e565b5252517e4c5f4f4b5b105d5153">info@mtceduhub.com</span></a>
+                                <a href="mailto:info@mtceduhub.com">
+                                    <span>info@mtceduhub.com</span>
+                                </a>
                             </li>
                         </ul>
 

@@ -24,36 +24,34 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12">
                     <div class="about-content left-content">
-                        <span class="sub-title">About Us</span>
-                        <h6>MTCEduHub has earned a reputation for providing training solutions to our clients with the
-                            insights they need to dominate their niche in today’s hyper-competitive environment.</h6>
-                        <p>
-                            We formed a strategic alliance with VMEdu, a global training solutions provider, based in
-                            Silicon
-                            Valley, USA to provide world-class in-demand training solutions through online and classroom
-                            platforms. We provide training solutions that modify the behaviour of participants at very
-                            affordable rates. We work with our clients to help them attain their desired professional
-                            certifications with ease. At MTCEduhub, we strive to be our Client’s lifelong career companions.
+                        <h2><span class="sub-title">About Us</span></h2>
+                        <p>MTCEduHub is a leading provider of training solutions for individuals and organizations seeking
+                            to stay ahead in today's hyper-competitive environment. We have built a strong reputation for
+                            providing insights and training that help our clients dominate their niche, while our strategic
+                            alliance with VMEdu, a global training solutions provider based in Silicon Valley, USA, ensures
+                            that we offer world-class training solutions through online and classroom platforms.
                         </p>
                         <p>
-                            We are client-oriented professionals with over 10 years of experience in the field of training
-                            and development. Our expertise in business best practice and passionate training delivery bring
-                            tangible business results for our clients.
+                            At MTCEduHub, we are passionate about helping our clients attain their desired professional
+                            certifications with ease. We work closely with our clients to understand their unique needs and
+                            tailor our training solutions to fit those needs. Our client-oriented professionals have over 10
+                            years of experience in the field of training and development, and their expertise in business
+                            best practices, combined with their passion for training delivery, bring tangible business
+                            results for our clients.
                         </p>
-
-                        <div class="features-text">
-                            <h5>
-                                <i class='bx bx-planet'></i> When you partner with MTCEduHub, you will be working with a
-                                company that is:
-                            </h5>
-                            <ul>
-                                <li> Professional</li>
-                                <li>Knowledgeable</li>
-                                <li>Energetic</li>
-                                <li>Fun</li>
-                                <li>Well-Respected</li>
-                            </ul>
-                        </div>
+                        <p>
+                            We offer a wide range of training solutions that modify the behaviour of participants at very
+                            affordable rates. Our courses cover a variety of topics, including project management, IT
+                            service management, cybersecurity, and more. We believe that education should be accessible to
+                            everyone, and that's why we offer flexible course schedules and competitive pricing to ensure
+                            that our services are within reach of all aspiring professionals.
+                        </p>
+                        <p>
+                            At MTCEduHub, we strive to be our clients' lifelong career companions. We understand that our
+                            clients' success is our success, and we are committed to providing the insights, training, and
+                            support that they need to achieve their goals. Thank you for choosing MTCEduHub, and we look
+                            forward to working with you to achieve your professional aspirations.
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12">
