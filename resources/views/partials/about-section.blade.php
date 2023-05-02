@@ -13,7 +13,7 @@
                 <div class="about-content">
                     <span class="sub-title">About Us</span>
                     <h2>Learn New Skills to go ahead for Your Career</h2>
-                    <h6>We can support student forum 24/7 for national and international students.</h6>
+                    <h6>We provide 24/7 support for national and international students.</h6>
                     <p>Once upon a time, people spent decades on a job and then retired-but, that time is gone. The
                         working public now has a new model, one that encompasses multiple careers, a variety of job
                         opportunities, acquisition of new knowledge, application of new skills, productive
