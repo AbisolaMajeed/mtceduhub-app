@@ -37,10 +37,12 @@ class AppServiceProvider extends ServiceProvider
             URL::forceScheme('https');
         }
 
-        View::share('total_courses', Course::withTrashed()->count());
-        View::share('total_new_applicants', Register::whereDate('created_at', Carbon::today())->count());
-        View::share('total_applicants', Register::withTrashed()->count());
-        View::share('total_accounts', User::withTrashed()->count());
-        View::share('total_blogs', Blog::withTrashed()->count());
+        if (! $this->app->runningInConsole()) {
+            View::share('total_courses', Course::withTrashed()->count());
+            View::share('total_new_applicants', Register::whereDate('created_at', Carbon::today())->count());
+            View::share('total_applicants', Register::withTrashed()->count());
+            View::share('total_accounts', User::withTrashed()->count());
+            View::share('total_blogs', Blog::withTrashed()->count());
+        }
     }
 }
