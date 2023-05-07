@@ -27,7 +27,8 @@
 
                     <div class="col-lg-4 col-md-4">
                         <ul class="top-header-login-register">
-                            <li><a href="#"><i class='bx bx-log-in-circle'></i> Register</a></li>
+                            <li><a href="{{ route('login') }}"><i class='bx bx-user'></i> Admin</a></li>
+                            <li><a href="{{ route('view-register') }}"><i class='bx bx-log-in-circle'></i> Register</a></li>
                         </ul>
                     </div>
                 </div>
@@ -63,12 +64,12 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('about') ? 'active' : '' }}" href="{{ route('about') }}" class="nav-link">
+                                    <a class="nav-link {{ Request::is('about') ? 'active' : '' }}" href="{{ route('about') }}">
                                         About
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#" class="nav-link">
+                                    <a class="nav-link {{ Request::is('register') ? 'active' : '' }}" href="{{ route('view-register') }}">
                                         Register
                                     </a>
                                 </li>
@@ -78,22 +79,22 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('testimonials') ? 'active' : '' }}" href="{{ route('testimonials') }}" class="nav-link">
+                                    <a class="nav-link {{ Request::is('testimonials') ? 'active' : '' }}" href="{{ route('testimonials') }}">
                                         Testimonial
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('gallery') ? 'active' : '' }}" href="{{ route('gallery') }}" class="nav-link">
+                                    <a class="nav-link {{ Request::is('gallery') ? 'active' : '' }}" href="{{ route('gallery') }}">
                                         Gallery
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link {{ Request::is('contact') ? 'active' : '' }}" href="{{ route('contact') }}" class="nav-link">
+                                    <a class="nav-link {{ Request::is('contact') ? 'active' : '' }}" href="{{ route('contact') }}">
                                         Contact
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#" class="nav-link">
+                                    <a class="nav-link {{ Request::is('blog') ? 'active' : '' }}" href="{{ route('blog') }}">
                                         Blog
                                     </a>
                                 </li>

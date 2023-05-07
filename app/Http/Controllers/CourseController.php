@@ -2,61 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Course;
 
 class CourseController extends Controller
 {
     public function index()
     {
-        return view('pages.courses');
+        $courses = Course::all();
+        return view('pages.courses', compact('courses'));
     }
 
-    public function viewAwsCloud()
+    public function getACourse($title)
     {
-        return view('pages.courses.aws-cloud');
-    }
+        $courses_exist = Course::where('title', $title)->firstOrFail();
 
-    public function viewAwsSolutions()
-    {
-        return view('pages.courses.aws-solutions');
-    }
-
-    public function viewAwsSysops()
-    {
-        return view('pages.courses.aws-sysops');
-    }
-
-    public function viewAwsDevelop()
-    {
-        return view('pages.courses.aws-develop');
-    }
-
-    public function viewAwsSolution()
-    {
-        return view('pages.courses.aws-solution');
-    }
-
-    public function viewAwsDevops()
-    {
-        return view('pages.courses.aws-devops');
-    } 
-
-    public function viewComptiaNetwork()
-    {
-        return view('pages.courses.comptia-network');
-    }
-
-    public function viewIibaCbap()
-    {
-        return view('pages.courses.iiba-cbap');
-    }
-
-    public function viewIibaEcba()
-    {
-        return view('pages.courses.iiba-ecba');
-    }
-
-    public function viewPmiCapm ()
-    {
-        return view('pages.courses.pmi-capm');
+        $courses = Course::where('title', $courses_exist->title)->limit(1)->get();
+        $coursestags = Course::where('aliase', $courses[0]->aliase)->limit(3)->inRandomOrder()->get();
+        return view('pages.a-course', compact('courses', 'coursestags'));
     }
 }

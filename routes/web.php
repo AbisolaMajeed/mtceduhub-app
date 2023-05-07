@@ -22,37 +22,21 @@ use App\Http\Controllers\NewsletterSubscriberController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Route::get('/', [HomeController::class, 'index'])->name('/');
 Route::get('courses', [CourseController::class, 'index'])->name('courses');
+Route::get('courses/{title}',[CourseController::class, 'getACourse'])->name('a-course');
 Route::get('about', [AboutController::class, 'index'])->name('about');
-Route::get('register',[RegisterController::class, 'index'])->name('register');
+Route::get('course-register',[RegisterController::class, 'index'])->name('view-register');
+Route::post('course-register',[RegisterController::class, 'register'])->name('course.register');
 Route::get('testimoials',[TestimonialController::class, 'index'])->name('testimonials');
 Route::get('gallery',[GalleryController::class, 'index'])->name('gallery');
 Route::get('blog',[BlogController::class, 'index'])->name('blog');
-
+Route::get('blog/{title}',[BlogController::class, 'singleBlog'])->name('single-blog');
 
 Route::get('contact',[ContactController::class, 'index'])->name('contact');
 Route::post('contact', [ContactController::class, 'mailContactForm']);
 
 Route::post('newsletter-subscriber', [NewsletterSubscriberController::class, 'mailNewletterSubscriberForm']);
 
-Route::group(
-    [
-        'prefix' => 'courses'
-    ], function () {
-        Route::get('/aws-cloud', [CourseController::class, 'viewAwsCloud']);
-        Route::get('/aws-solutions', [CourseController::class, 'viewAwsSolutions']);
-        Route::get('/aws-sysops', [CourseController::class, 'viewAwsSysops']);
-        Route::get('/aws-develop', [CourseController::class, 'viewAwsDevelop']);
-        Route::get('/aws-solution', [CourseController::class, 'viewAwsSolution']);
-        Route::get('/aws-devops', [CourseController::class, 'viewAwsDevops']);
-        Route::get('/comptia-network', [CourseController::class, 'viewComptiaNetwork']);
-        Route::get('/iiba-cbap', [CourseController::class, 'viewIibaCbap']);
-        Route::get('/iiba-ecba', [CourseController::class, 'viewIibaEcba']);
-        Route::get('/pmi-capm', [CourseController::class, 'viewPmiCapm']);
-    }
-);
+require __DIR__.'/auth.php';
+require __DIR__.'/admin.php';

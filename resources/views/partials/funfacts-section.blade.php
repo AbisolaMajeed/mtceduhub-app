@@ -18,7 +18,7 @@
                             <div class="icon">
                                 <i class='bx bx-book-reader'></i>
                             </div>
-                            <h3 class="odometer" data-count="1754">00</h3>
+                            <h3 class="odometer" data-count="{{ $total_courses }}">00</h3>
                             <p>Total Courses</p>
                         </div>
                     </div>

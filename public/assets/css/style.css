@@ -2711,7 +2711,7 @@ Main Banner CSS
 }
 
 .courses-img-size {
-  object-fit: cover;
+  object-fit: contain;
   height: 15vw;
 }
 
@@ -3060,7 +3060,7 @@ Boxes CSS
 
 .single-boxes-item.bg-image {
   background-color: #4054b2;
-  background-image: url(../img/mission-bg.jpg);
+  background-image: url(../img/blog.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -3598,35 +3598,35 @@ Courses Categories CSS
 }
 
 .single-categories-courses-item.bg1 {
-  background-image: url(../img/categories/1.jpg);
+  background-image: url(../img/blog.png);
 }
 
 .single-categories-courses-item.bg2 {
-  background-image: url(../img/categories/2.jpg);
+  background-image: url(../img/blog.png);
 }
 
 .single-categories-courses-item.bg3 {
-  background-image: url(../img/categories/3.jpg);
+  background-image: url(../img/blog.png);
 }
 
 .single-categories-courses-item.bg4 {
-  background-image: url(../img/categories/4.jpg);
+  background-image: url(../img/blog.png);
 }
 
 .single-categories-courses-item.bg5 {
-  background-image: url(../img/categories/5.jpg);
+  background-image: url(../img/blog.png);
 }
 
 .single-categories-courses-item.bg6 {
-  background-image: url(../img/categories/6.jpg);
+  background-image: url(../img/blog.png);
 }
 
 .single-categories-courses-item.bg7 {
-  background-image: url(../img/categories/7.jpg);
+  background-image: url(../img/blog.png);
 }
 
 .single-categories-courses-item.bg8 {
-  background-image: url(../img/categories/8.jpg);
+  background-image: url(../img/blog.png);
 }
 
 .single-categories-courses-item:hover, .single-categories-courses-item:focus {
@@ -5637,7 +5637,7 @@ Courses Details CSS
 }
 
 .courses-details-image img {
-  width: 100%;
+  width: auto;
   border-radius: 5px;
 }
 
@@ -6163,7 +6163,7 @@ Courses Details CSS
   position: relative;
   border-radius: 5px;
   z-index: 1;
-  background-image: url(../img/mission-bg.jpg);
+  background-image: url(../img/blog.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -7015,7 +7015,7 @@ Mission CSS
 .mission-area {
   position: relative;
   z-index: 1;
-  background-image: url(../img/mission-bg.jpg);
+  background-image: url(../img/blog.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -11003,15 +11003,15 @@ Widget Sidebar CSS
 }
 
 .widget-area .widget_raque_posts_thumb .item .thumb .fullimage.bg1 {
-  background-image: url(../img/blog/7.jpg);
+  background-image: url(../img/blog.png);
 }
 
 .widget-area .widget_raque_posts_thumb .item .thumb .fullimage.bg2 {
-  background-image: url(../img/blog/8.jpg);
+  background-image: url(../img/blog.png);
 }
 
 .widget-area .widget_raque_posts_thumb .item .thumb .fullimage.bg3 {
-  background-image: url(../img/blog/9.jpg);
+  background-image: url(../img/blog.png);
 }
 
 .widget-area .widget_raque_posts_thumb .item .thumb::before, .widget-area .widget_raque_posts_thumb .item .thumb::after {
@@ -11194,7 +11194,7 @@ Widget Sidebar CSS
   border-radius: 5px;
   height: 400px;
   text-align: center;
-  background-image: url(../img/mission-bg.jpg);
+  background-image: url(../img/blog.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -17796,7 +17796,7 @@ Motivation Mission Area CSS
 }
 
 .motivation-mission-image {
-  background-image: url(../img/motivation-course/motivation-mission.jpg);
+  background-image: url(../img/blog.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

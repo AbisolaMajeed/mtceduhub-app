@@ -23,198 +23,41 @@
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-4 col-md-6">
+
+                @foreach ($courses as $course)
+                <div class="col-lg-4 col-md-6 mix AWS">
                     <div class="single-courses-box mb-30">
                         <div class="courses-image">
-                            <a href="{{ url('courses/aws-cloud') }}" class="d-block"><img
-                                    src="{{ asset('assets/img/courses/AWS-Cloud-Practitioner.jpg') }}" alt="image" class="courses-img-size"></a>
+                            <a href="{{ route('a-course', $course->title) }}" class="d-block"><img
+                                    src="{{ $course->cover }}" alt="image"
+                                    class="" style=" "></a>
 
                             <div class="courses-tag">
-                                <a href="{{ url('courses/aws-cloud') }}" class="d-block">AWS</a>
+                                <a href="{{ route('a-course', $course->title) }}" class="d-block">{{ $course->category }}</a>
                             </div>
                         </div>
 
                         <div class="courses-content">
-                            <h3><a href="{{ url('courses/aws-cloud') }}" class="d-inline-block">AWS Cloud Practitioner</a>
-                            </h3>
+                            <h3><a href="{{ route('a-course', $course->title) }}" class="d-inline-block">{{ $course->title }}</a></h3>
 
                             <div class="courses-rating">
                                 <div class="review-stars-rated">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
+                                    @for ($i=0; $i<$course->rating;$i++)
+                                        <i class='bx bxs-star'></i>
+                                    @endfor
                                 </div>
 
                                 <div class="rating-total">
-                                    5.0 (1 rating)
+                                    {{ $course->rating }}.0
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-courses-box mb-30">
-                        <div class="courses-image">
-                            <a href="{{ url('courses/aws-solutions') }}" class="d-block"><img src="{{ asset('assets/img/courses/AWS Solutions-Architect-Associate.png') }}"
-                                    alt="image"  class="courses-img-size"></a>
-
-                            <div class="courses-tag">
-                                <a href="{{ url('courses/aws-solutions') }}" class="d-block">AWS</a>
-                            </div>
-                        </div>
-
-                        <div class="courses-content">
-                            <h3><a href="{{ url('courses/aws-solutions') }}" class="d-inline-block">AWS Solutions Architect Associate</a>
-                            </h3>
-
-                            <div class="courses-rating">
-                                <div class="review-stars-rated">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                </div>
-
-                                <div class="rating-total">
-                                    5.0 (1 rating)
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-courses-box mb-30">
-                        <div class="courses-image">
-                            <a href="{{ url('courses/aws-sysops') }}" class="d-block"><img src="{{ asset('assets/img/courses/AWS-SysOps-Administrator-Associate.png') }}"
-                                    alt="image"  class="courses-img-size"></a>
-
-                            <div class="courses-tag">
-                                <a href="{{ url('courses/aws-sysops') }}" class="d-block">AWS</a>
-                            </div>
-                        </div>
-
-                        <div class="courses-content">
-                            <h3><a href="{{ url('courses/aws-sysops') }}" class="d-inline-block">AWS SysOps Administrator Associate</a>
-                            </h3>
-
-                            <div class="courses-rating">
-                                <div class="review-stars-rated">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star-half'></i>
-                                </div>
-
-                                <div class="rating-total">
-                                    4.5 (2 rating)
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-courses-box mb-30">
-                        <div class="courses-image">
-                            <a href="{{ url('courses/aws-develop') }}" class="d-block"><img src="{{ asset('assets/img/courses/AWS-Developer-Associate.png') }}"
-                                    alt="image"  class="courses-img-size"></a>
-
-                            <div class="courses-tag">
-                                <a href="{{ url('courses/aws-develop') }}" class="d-block">AWS</a>
-                            </div>
-                        </div>
-
-                        <div class="courses-content">
-                            <h3><a href="{{ url('courses/aws-develop') }}" class="d-inline-block">AWS Developer Associate</a></h3>
-
-                            <div class="courses-rating">
-                                <div class="review-stars-rated">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bx-star'></i>
-                                </div>
-
-                                <div class="rating-total">
-                                    4.0 (1 rating)
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-courses-box mb-30">
-                        <div class="courses-image">
-                            <a href="{{ url('courses/aws-solution') }}" class="d-block"><img src="{{ asset('assets/img/courses/AWS-Solution-Architect-Professional.png') }}"
-                                    alt="image"  class="courses-img-size"></a>
-
-                            <div class="courses-tag">
-                                <a href="{{ url('courses/aws-solution') }}" class="d-block">AWS</a>
-                            </div>
-                        </div>
-
-                        <div class="courses-content">
-                            <h3><a href="{{ url('courses/aws-solution') }}" class="d-inline-block">AWS Solution Architect
-                                    Professional</a></h3>
-
-                            <div class="courses-rating">
-                                <div class="review-stars-rated">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                </div>
-
-                                <div class="rating-total">
-                                    5.0 (1 rating)
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-courses-box mb-30">
-                        <div class="courses-image">
-                            <a href="{{ url('courses/aws-devops') }}" class="d-block"><img src="{{ asset('assets/img/courses/AWS-DevOps-Engineer-Professional.png') }}"
-                                    alt="image"  class="courses-img-size"></a>
-
-                            <div class="courses-tag">
-                                <a href="{{ url('courses/aws-devops') }}" class="d-block">AWS</a>
-                            </div>
-                        </div>
-
-                        <div class="courses-content">
-                            <h3><a href="{{ url('courses/aws-devops') }}" class="d-inline-block">AWS DevOps Engineer Professional</a>
-                            </h3>
-
-                            <div class="courses-rating">
-                                <div class="review-stars-rated">
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                    <i class='bx bxs-star'></i>
-                                </div>
-
-                                <div class="rating-total">
-                                    5.0 (1 rating)
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </div> 
+                @endforeach
             </div>
         </div>
+
     </section>
     <!-- End Courses Area -->
 

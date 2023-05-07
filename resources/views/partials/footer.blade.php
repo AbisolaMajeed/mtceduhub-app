@@ -45,11 +45,11 @@
 
                         <ul class="support-link">
                             <li><a href="{{ route('about') }}">About</a></li>
-                            <li><a href="#">Blog</a></li>
+                            <li><a href="{{ route('blog') }}">Blog</a></li>
                             <li><a href="{{ route('courses') }}">Courses</a></li>
                             <li><a href="{{ route('gallery') }}">Gallery</a></li>
                             <li><a href="{{ route('testimonials') }}">Testimonial</a></li>
-                            {{-- <li><a href="#">Register</a></li> --}}
+                            <li><a href="{{ route('view-register') }}">Register</a></li>
                         </ul>
                     </div>
                 </div>
@@ -101,3 +101,7 @@
         </label>
     </div>
     <!-- Dark version -->
+
+    <a href="https://api.whatsapp.com/send?phone=2348029894444&text=Hello%20MTCEDUHUB" target="_BLANK">
+        <img src="{{ asset('assets/img/wchat.png') }}" style="position: fixed; bottom: 40px; z-index: 10000; width: 200px; left: 40px;">
+    </a>

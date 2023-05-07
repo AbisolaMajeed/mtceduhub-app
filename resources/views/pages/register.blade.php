@@ -8,6 +8,7 @@
     <!-- Start Register Area -->
     <section class="register-area">
         <div class="row m-0">
+
             <div class="col-lg-6 col-md-12 p-0">
                 <div class="register-image">
                     <img src="assets/img/register-bg.jpg" alt="image">
@@ -19,46 +20,69 @@
                     <div class="d-table">
                         <div class="d-table-cell">
                             <div class="register-form">
-                                <div class="logo">
-                                    <a href="index.html"><img src="assets/img/black-logo.png" class="black-logo"
-                                            alt="image"></a>
-                                    <a href="index.html"><img src="assets/img/logo.png" class="white-logo"
-                                            alt="image"></a>
-                                </div>
 
-                                <h3>Open up your Raque Account now</h3>
-                                <p>Already signed up? <a href="login.html">Log in</a></p>
+                                <h3 style="text-align: left;">Register</h3>
+                                <p style="text-align:left;">
+                                    Register for Free and Get a Call Back from Our Admissions Team Today.
+                                    <br>
+                                    Fill out the form below to get access to our courses and receive a call back from our admissions team:
+                                </p>
 
-                                <form>
+                                @if(Session::has('status'))
+                                    <br>
+                                    <div class="alert alert-success">
+                                        {{ Session::get('status') }}
+                                    </div>
+                                @endif
+
+                                @if($errors->any())
+                                    <br>
+                                    <div class="alert alert-danger">
+                                        Something went wrong
+                                    </div>
+                                @endif
+
+                                <form action="{{ route('course.register') }}" method="post">
+                                    @csrf
                                     <div class="form-group">
-                                        <input type="email" name="email" id="email" placeholder="Your email address"
+                                        <input type="text" name="fullname" id="fullname" value="{{ old('fullname') }}" placeholder="Your fullname"
                                             class="form-control">
+                                        @error('fullname')
+                                            <p class="text-danger" style="text-align: left;">Kindly provide a valid Full name</p>
+                                        @enderror
                                     </div>
 
                                     <div class="form-group">
-                                        <input type="password" name="password" id="password"
-                                            placeholder="Create a password" class="form-control">
+                                        <input type="email" name="email" id="email" value="{{ old('email') }}" placeholder="Your email address"
+                                            class="form-control">
+                                            @error('email')
+                                                <p class="text-danger" style="text-align: left;">Kindly provide a valid email</p>
+                                            @enderror
                                     </div>
 
-                                    <button type="submit">Sign Up</button>
-
-                                    <div class="connect-with-social">
-                                        <span>Or</span>
-                                        <button type="submit" class="facebook"><i class='bx bxl-facebook'></i> Connect with
-                                            Facebook</button>
-                                        <button type="submit" class="twitter"><i class='bx bxl-twitter'></i> Connect with
-                                            Twitter</button>
+                                    <div class="form-group">
+                                        <input type="text" name="phone_number" id="phone_number" value="{{ old('phone_number') }}" placeholder="Your phone number"
+                                            class="form-control">
+                                            @error('phone_number')
+                                                <p class="text-danger" style="text-align: left;">Kindly provide a valid Phone number</p>
+                                            @enderror
                                     </div>
+
+                                    <br>
+                                    <p style="text-align: left">
+                                        By clicking "Register for Free and Get a Call Back Today", you agree to our Terms of Service and Privacy Policy. You also agree to receive a call back from our admissions team today to discuss your education goals and answer any questions you may have.
+                                    </p>
+                                    <br>
+                                    <br>
+                                    <button type="submit">Register for Free and Get a Call Back Today</button>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
     <!-- End Register Area -->
-    <!-- Start Partner Area -->
-    @include('partials.partner-section')
-    <!-- End Partner Area -->
 @endsection

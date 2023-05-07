@@ -1,8 +1,5 @@
 <!doctype html>
 <html lang="zxx" class="theme-light">
-
-<!-- Mirrored from templates.envytheme.com/raque/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 21 Apr 2023 17:11:04 GMT -->
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -80,7 +77,4 @@
     <script src="{{ asset('assets/revolution/js/extensions/revolution.extension.video.min.js') }}"></script>
     <script src="{{ asset('assets/js/rev-slider-custom.js') }}"></script>
 </body>
-
-<!-- Mirrored from templates.envytheme.com/raque/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 21 Apr 2023 17:13:04 GMT -->
-
 </html>
